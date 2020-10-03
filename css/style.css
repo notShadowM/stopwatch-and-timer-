@@ -15,7 +15,6 @@ body{
     background-color: rgb(123, 136, 160,0.5);
     margin-top: 50px;
     text-align: center;
-    padding-top: 50px;
     padding-bottom: 50px;
 }
 
@@ -57,10 +56,74 @@ body{
     width: 120px;
     height: 40px;
     background-color: cadetblue;
-    border:solid #ddd 5px;
+    border:solid #ddd 3px;
     font-size: large;
     padding-top:5px;
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 30px;
+}
+/* ------------------------------------------------------------------------------------------- */
+
+
+li{
+    display: inline;
+    margin-left: 10px;
+}
+
+li:hover{
+    cursor: pointer;
+}
+
+li:active{
+    cursor: pointer;
+    color:cyan;
+}
+
+li:first-of-type{
+    border-right: solid rgb(75, 85, 76) 3px;
+    padding-right: 10px;
+}
+
+.clicked{
+    color:cyan;
+}
+
+ul{
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+
+.hidden{
+    display:none;
+}
+
+#timer{
+    width: 40%;
+    height: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin:auto;
+    margin-bottom: 30px;
+    background-color: aqua;
+    border:solid blue 10px;
+}
+
+#inputs{
+    margin-bottom: 15px;
+}
+
+input{
+    width: 20px;
+    margin-right: 5px;
+}
+
+#submit{
+    width: 60px;
+    height: 40px;
+    background-color: cadetblue;
+    border:solid #ddd 3px;
+    font-size: smaller;
+    padding-top:5px;
+    padding-bottom: 5px;
 }

@@ -10,15 +10,41 @@
 <body>
     
     <div id="box" class="box">
-        <div id="time">
-        <span id="sec"></span>  <span id="icon">s</span>    <span id="mSec"></span>
+        <nav id="nav">
+            <ul>
+                <li id="sw" class="clicked">Stopwatch</li>
+                <li id="t">Timer</li>
+            </ul>
+        </nav>
+<!-- --------------------------------------------------------------------------------------------------------- -->
+       <div id="stopwatch" class="">
+            <div id="time">
+                <span id="sec"></span>  <span id="icon">s</span>    <span id="mSec"></span>
+            </div>
+    
+            <div id="btns">
+                <button class="btn" id="start">Start</button>
+                <button class="btn" id="reset">Reset</button>
+            </div>
         </div>
-
-        <div id="btns">
-            <button class="btn" id="start">Start</button>
-            <button class="btn" id="reset">Reset</button>
+<!-- --------------------------------------------------------------------------------------------------------- -->
+        <div id="timewatch" class="hidden">
+            <div id="inputs">
+                <input type="text" id="inputH"> <input type="text" id="inputM"><input type="text" id="inputS">
+                <button id="submit">Enter</button>
+            </div>
+            <div id="timer">
+                <span id="hours"></span>:<span id="mins"></span>:<span id="secs"></span>
+            </div>
+    
+            <div id="tBtns">
+                <button class="btn" id="Tstart">Start</button>
+                <button class="btn" id="Treset">Reset</button>
+            </div>
         </div>
+<!-- --------------------------------------------------------------------------------------------------------- -->
     </div>
+
 
 
 </body>
