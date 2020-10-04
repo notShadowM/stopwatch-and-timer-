@@ -148,8 +148,14 @@ function clock(){
             hoursTime--;
             hours.textContent = numberFormat(hoursTime);
         }
-    }else{
+    }else if(secsTime === 0 && minsTime === 0 && hoursTime === 0){
         zero = true;
+        // console.log(zero);
+    }
+    if(zero){
+        clearInterval(timerId);
+        stbtn.textContent = "Start"; 
+        // console.log(zero);       
     }
 }
 
@@ -162,6 +168,7 @@ function timeInterval(){
 stbtn.addEventListener("click" , ()=>{
     if(stbtn.textContent === "Start"){
         timerId = timeInterval();
+
         rtbtn.addEventListener("click",()=>{
             clearInterval(timerId);
             stbtn.textContent = "Start";
@@ -183,16 +190,13 @@ stbtn.addEventListener("click" , ()=>{
             }
         })
 
-        if(zero === ture){
-            clearInterval(timerId);
-            stbtn.textContent = "Start";        
-        }
-        // ------------------------ask about zero-------------------------------pls dont forget :(
     }else if(stbtn.textContent === "Stop"){
         stbtn.textContent = "Start";
         clearInterval(timerId);
     }
 })
+
+
 
 rtbtn.addEventListener("click",()=>{
     if(Number.isInteger(savedH,savedM,savedS)){
